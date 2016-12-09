@@ -17,7 +17,7 @@ class CreateAppsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('crawler');
-            $table->json('config');
+            $table->text('config');
             $table->timestamps();
         });
     }
